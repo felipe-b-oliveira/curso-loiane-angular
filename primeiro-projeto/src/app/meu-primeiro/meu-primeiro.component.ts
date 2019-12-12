@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
         <p>Meu primeiro component com Angular!</p>
     `
 })
-export class MeuPrimeiroComponent {  }
+export class MeuPrimeiroComponent { 
+    // Aqui vem o codigo javascript e logica
+ }
