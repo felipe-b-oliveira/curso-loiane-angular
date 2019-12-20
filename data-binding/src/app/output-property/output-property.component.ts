@@ -19,7 +19,7 @@ export class OutputPropertyComponent implements OnInit {
   }
 
   decrementa() {
-    this.valor--;
+    this.campoValorInput.nativeElement.value--;
     this.mudouValor.emit({novoValor: this.valor});
   }
 
