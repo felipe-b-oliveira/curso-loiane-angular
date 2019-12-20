@@ -85,6 +85,11 @@
 
         <app-curso [nome]="nomeDoCurso"></app-curso>
 
+        <!--//Ao usar valores fixos, estes podem ser passados diretamente sem usar o Property Binding
+            <contador valor="10"></contador>-->
+
+        <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
+
 
 
     </article>
