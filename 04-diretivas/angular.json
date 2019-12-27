@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../04-diretivas/node_modules/jquery/dist/jquery.min.js",
+              "../04-diretivas/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "../04-diretivas/node_modules/popper.js/dist/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {
