@@ -6,19 +6,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="aba == 'home'" (click)="aba = 'home'">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" [class.active]="aba == 'mapa'" (click)="aba = 'mapa'">Mapa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" [class.active]="aba == 'lista'" (click)="aba = 'lista'">Lista</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" [class.active]="aba == 'sobre'" (click)="aba = 'sobre'" tabindex="-1" aria-disabled="true">Sobre</a>
             </li>
           </ul>
         </div>
       </nav>
+</div>
+
+<div class="container" [ngSwitch]="aba">
+  <p *ngSwitchCase="'mapa'">Modo Mapa ativado</p>
+  <p *ngSwitchCase="'lista'">Modo Lista ativado</p>
+  <p *ngSwitchDefault>Home</p>
 </div>
